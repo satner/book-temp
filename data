@@ -1,0 +1,50 @@
+{
+  "name": "new",
+  "version": "1.0.0",
+  "description": "Analyze league of legends players and create a community",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon -r esm index.js",
+    "client": "npm start --prefix app-client\\teamate-stats",
+    "client-linux": "npm start --prefix app-client/teamate-stats",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev-linux": "concurrently \"npm run server\" \"npm run client-linux\""
+  },
+  "keywords": [
+    "league of legends",
+    "Data visualization",
+    "Community"
+  ],
+  "author": "Nikolaos Rentas",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/satner/diploma-thesis"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^0.2.0",
+    "apollo-engine": "^1.1.2",
+    "apollo-server-express": "^2.2.2",
+    "bcrypt": "^3.0.2",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "esm": "^3.1.0",
+    "event-stream": "^3.3.4",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "graphql-type-json": "^0.2.1",
+    "jsonwebtoken": "^8.4.0",
+    "leaguejs": "^1.14.5",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
+    "mongoose": "^5.3.12",
+    "morgan": "^1.9.1",
+    "nodemailer": "^4.7.0",
+    "promise": "^8.0.2",
+    "qs-middleware": "^1.0.3"
+  }
+}
