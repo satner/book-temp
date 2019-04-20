@@ -1,3 +1,3 @@
-let json_cb = (data) => {
-    console.log(data)
+let json_cb = (d) => {
+    console.log(d)
 }
